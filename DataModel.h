@@ -1,10 +1,10 @@
 #pragma once
 #include "IDataModel.h"
-#include "Planets.h"
-#include "Shifts.h"
+#include "Planet.h"
+#include "Ship.h"
 class DataModel : public IDataModel
 {
-	Planets planets;
-	Shifts shifts;
+	Planet planets;
+	Ship ship;
 	
 };
