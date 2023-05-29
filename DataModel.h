@@ -1,12 +1,10 @@
 #pragma once
 #include "IDataModel.h"
+#include "Planets.h"
+#include "Shifts.h"
 class DataModel : public IDataModel
 {
-protected:
-	int Planets = 2;
-	int Shifts = 0;
-public:
-	void UploadData();
-	void LoadData();
+	Planets planets;
+	Shifts shifts;
+	
 };
-

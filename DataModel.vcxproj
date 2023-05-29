@@ -141,6 +141,7 @@
   <ItemGroup>
     <ClCompile Include="DataModel.cpp" />
     <ClCompile Include="IDataModel.cpp" />
+    <ClCompile Include="Main.cpp" />
     <ClCompile Include="NeutralZone.cpp" />
     <ClCompile Include="OnePlayer.cpp" />
     <ClCompile Include="TwoPlayer.cpp" />
