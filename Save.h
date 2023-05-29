@@ -1,4 +1,6 @@
 #pragma once
-class Save{
-
+#include "ISave.h"
+class Save : public ISave {
+	void Uploadfile();
+	void LoadFile();
 };
