@@ -140,12 +140,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="DataModel.cpp" />
+    <ClCompile Include="IDataModel.cpp" />
     <ClCompile Include="NeutralZone.cpp" />
     <ClCompile Include="OnePlayer.cpp" />
     <ClCompile Include="TwoPlayer.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DataModel.h" />
+    <ClInclude Include="IDataModel.h" />
     <ClInclude Include="NeutralZone.h" />
     <ClInclude Include="OnePlayer.h" />
     <ClInclude Include="TwoPlayer.h" />
