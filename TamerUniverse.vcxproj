@@ -21,7 +21,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{871424ab-db74-4976-804f-b3eca1b75bf6}</ProjectGuid>
+
     <RootNamespace>TamerUniverse</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
@@ -139,13 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="CommandEngine.cpp" />
-    <ClCompile Include="ICommandEngine.cpp" />
-    <ClCompile Include="TamerUniverse.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="CommandEngine.h" />
-    <ClInclude Include="ICommandEngine.h" />
+
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

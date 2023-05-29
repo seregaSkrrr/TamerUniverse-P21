@@ -18,18 +18,12 @@
     <ClCompile Include="TamerUniverse.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="ICommandEngine.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="CommandEngine.cpp">
+
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ICommandEngine.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="CommandEngine.h">
+
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>
