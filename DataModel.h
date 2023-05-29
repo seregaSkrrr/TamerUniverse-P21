@@ -1,5 +1,6 @@
 #pragma once
-class DataModel
+#include "IDataModel.h"
+class DataModel : public IDataModel
 {
 protected:
 	int Planets = 2;
