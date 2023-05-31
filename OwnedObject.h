@@ -1,6 +1,6 @@
 #pragma once
 class OwnedObject
 {
-	int owned;
+	/*int owned;*/
 };
 
