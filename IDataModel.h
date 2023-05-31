@@ -2,6 +2,7 @@
 class IDataModel
 {
 public:
-	virtual void SaveUniversData();
+	virtual int SaveUniversData();
+	virtual int UniversData();
 };
 
