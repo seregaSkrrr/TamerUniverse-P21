@@ -21,7 +21,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{c7c20a2b-cc53-420e-a2f1-d040b2aea551}</ProjectGuid>
+
     <RootNamespace>TamerUniverse</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
@@ -139,19 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="C:\Users\student\Documents\GitHub\TamerUniverse-P21\DataModel.cpp" />
-    <ClCompile Include="C:\Users\student\Documents\GitHub\TamerUniverse-P21\IDataModel.cpp" />
-    <ClCompile Include="OwnedObjects.cpp" />
-    <ClCompile Include="Planets.cpp" />
-    <ClCompile Include="Shifts.cpp" />
-    <ClCompile Include="TamerUniverse.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="C:\Users\student\Documents\GitHub\TamerUniverse-P21\DataModel.h" />
-    <ClInclude Include="C:\Users\student\Documents\GitHub\TamerUniverse-P21\IDataModel.h" />
-    <ClInclude Include="OwnedObjects.h" />
-    <ClInclude Include="Planets.h" />
-    <ClInclude Include="Shifts.h" />
+
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
