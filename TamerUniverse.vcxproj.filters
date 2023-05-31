@@ -18,36 +18,12 @@
     <ClCompile Include="TamerUniverse.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\student\Documents\GitHub\TamerUniverse-P21\DataModel.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="C:\Users\student\Documents\GitHub\TamerUniverse-P21\IDataModel.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="Planets.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="Shifts.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="OwnedObjects.cpp">
+
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\Users\student\Documents\GitHub\TamerUniverse-P21\DataModel.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\student\Documents\GitHub\TamerUniverse-P21\IDataModel.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="Planets.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="Shifts.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="OwnedObjects.h">
+
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>
