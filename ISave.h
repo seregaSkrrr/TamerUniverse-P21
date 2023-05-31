@@ -1,5 +1,5 @@
 #pragma once
 class ISave{
 	virtual void Uploadfile();		
-	virtual void LoadFile();		//виртуальные функции 
+	virtual void LoadFile();		//РІРёСЂС‚СѓР°Р»СЊРЅС‹Рµ С„СѓРЅРєС†РёРё
 };
