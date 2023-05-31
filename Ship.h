@@ -1,6 +1,6 @@
 #pragma once
-#include "OwnedObjects.h"
-class Ship : public OwnedObjects
+#include "OwnedObject.h"
+class Ship : public OwnedObject
 {
 };
 
