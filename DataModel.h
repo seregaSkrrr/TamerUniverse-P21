@@ -6,5 +6,6 @@ class DataModel : public IDataModel
 {
 	Planet planets;
 	Ship ship;
-	
+public:
+	void SaveUniversData();
 };
