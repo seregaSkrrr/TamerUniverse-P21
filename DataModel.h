@@ -5,8 +5,10 @@
 class DataModel : public IDataModel
 {
 	Planet planets;
-	Ship ship;
+	Ship ship; 
 public:
-	int SaveUniversData();
-	int UniversData();
+	void SendShip(int planetIndex);
+	void BuildShip(int shield, int attack);
+	void StartTurn();
+	void EndTruen();
 };
