@@ -1,12 +1,11 @@
 #include "Save.h"
-#include "IDataModel.h"
 
-void Save::Uploadfile(IDataModel dataModel) {
+void Save::SaveToFile(IDataModel dataModel) {
 
 	//функция будет запрашивать переменные соответствующие составу игры: корабли, планеты и т.д. Будет брать данные из текстового файла (приложенный в папке с этим проектом) и менять данные переданные
 }
 
-void Save::LoadFile(IDataModel dataModel) {
+void Save::LoadFromFile(IDataModel dataModel) {
 
 	//функция будет запрашивать переменные соответствующие составу игры: корабли, планеты и т.д. Будет их записывать в текстовый файл (приложенный в папке с этим проектом) и менять данные переданные в функцию.
 }
