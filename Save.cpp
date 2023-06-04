@@ -7,7 +7,7 @@ void Save::SaveToFile() {
         Saving << "Written to the XML!" << endl;
     }
     Saving.close();
-    cout << "Записано!" << endl;
+    cout << "Written!" << endl;
 }
 
 void Save::LoadFromFile() {
