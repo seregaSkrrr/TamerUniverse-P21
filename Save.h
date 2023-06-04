@@ -5,7 +5,7 @@
 #include "ISave.h"
 using namespace std;
 
-class Save/* : public ISave */{
+class Save : public ISave {
 public:
 	void SaveToFile();
 	void LoadFromFile();

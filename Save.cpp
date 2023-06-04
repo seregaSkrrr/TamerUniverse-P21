@@ -4,10 +4,10 @@ void Save::SaveToFile() {
     ofstream Saving;
     Saving.open("Books.xml", ios::app);
     if (Saving.is_open()) {
-        Saving << "Written to the XML!" << endl;
+        Saving << "Added a string!" << endl;
     }
     Saving.close();
-    cout << "Записано!" << endl;
+    cout << "Added a string!" << endl;
 }
 
 void Save::LoadFromFile() {
