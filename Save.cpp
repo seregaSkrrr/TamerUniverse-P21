@@ -14,12 +14,11 @@ void Save::LoadFromFile() {
     string Data;
 
     ifstream Uploading("Books.xml", ios::app);
-    if (Uploading.is_open())
-    {
-        while (getline(Uploading, Data))
-        {
+    if (Uploading.is_open()){
+        while (getline(Uploading, Data)){
             cout << Data << endl;
         }
     }
     Uploading.close();
+
 }
