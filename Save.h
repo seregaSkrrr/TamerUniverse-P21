@@ -1,9 +1,12 @@
 #pragma once
+#include <fstream>
+#include <iostream>
+#include <string>
 #include "ISave.h"
-class Save : public ISave{
-	void Save::SaveToFile(IDataModel dataModel) {
+using namespace std;
 
-	}
-	void Save::LoadFromFile(IDataModel dataModel) {
-
-	}
+class Save/* : public ISave */{
+public:
+	void SaveToFile();
+	void LoadFromFile();
+};
