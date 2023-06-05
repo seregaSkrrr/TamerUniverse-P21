@@ -1,5 +1,6 @@
 #pragma once
-class DataModelGenerator
+#include "IDataModelGenerator.h"
+class DataModelGenerator : public IDataModelGenerator
 {
 public:
 	int CreateUniverse();
