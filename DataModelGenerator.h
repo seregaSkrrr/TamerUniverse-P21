@@ -2,6 +2,6 @@
 class DataModelGenerator
 {
 public:
-	int CreateUnivers();
+	int CreateUniverse();
 };
 
