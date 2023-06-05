@@ -1,6 +1,10 @@
 #pragma once
+#include "Owner.h"
 class OwnedObject
 {
-	/*int owned;*/
+	Owner _owner;
+public:
+	Owner GetOwner();
+	void SetOwner(Owner _owner);
 };
 
