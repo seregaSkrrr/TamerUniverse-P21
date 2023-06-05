@@ -1,9 +1,24 @@
 #include "Save.h"
 
-void Save::Uploadfile() {
-	//функция будет запрашивать переменные соответствующие составу игры: корабли, планеты и т.д. Будет брать данные из текстового файла (приложенный в папке с этим проектом) и менять данные переданные в функцию.
+void Save::SaveToFile() {
+    ofstream Saving;
+    Saving.open("Books.xml", ios::app);
+    if (Saving.is_open()) {
+        Saving << "Added a string!" << endl;
+    }
+    Saving.close();
+    cout << "Added a string!" << endl;
 }
 
-void Save::LoadFile() {
-	//функция будет запрашивать переменные соответствующие составу игры: корабли, планеты и т.д. Будет их записывать в текстовый файл (приложенный в папке с этим проектом) и менять данные переданные в функцию.
+void Save::LoadFromFile() {
+    string Data;
+
+    ifstream Uploading("Books.xml", ios::app);
+    if (Uploading.is_open()){
+        while (getline(Uploading, Data)){
+            cout << Data << endl;
+        }
+    }
+    Uploading.close();
+
 }
