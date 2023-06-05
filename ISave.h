@@ -1,6 +1,6 @@
 #pragma once
 class ISave {
 public:
-	virtual void SaveToFile()=0;		//Р·Р°РїРёСЃС‹РІР°РµС‚ РґР°РЅРЅС‹Рµ РёР· РєР»Р°СЃСЃР° IDataModel РІ xml С„Р°Р№Р» 
-	virtual void LoadFromFile()=0;		//СЃС‡РёС‚С‹РІР°РµС‚ РґР°РЅРЅС‹Рµ РёР· xml С„Р°Р№Р»Р°
+	virtual void SaveToFile()=0;		//записывает данные из класса IDataModel в xml файл 
+	virtual void LoadFromFile()=0;		//считывает данные из xml файла
 };

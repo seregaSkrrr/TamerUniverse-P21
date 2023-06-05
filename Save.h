@@ -1,9 +1,9 @@
 #pragma once
-#include <fstream>
-#include <iostream>
-#include <string>
 #include "ISave.h"
+#include <iostream>
+#include "pugixml.hpp"
 using namespace std;
+using namespace pugi;
 
 class Save : public ISave {
 public:

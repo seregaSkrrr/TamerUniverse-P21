@@ -1,24 +1,23 @@
 #include "Save.h"
 
 void Save::SaveToFile() {
-    ofstream Saving;
-    Saving.open("Books.xml", ios::app);
-    if (Saving.is_open()) {
-        Saving << "Added a string!" << endl;
-    }
-    Saving.close();
-    cout << "Added a string!" << endl;
+    
 }
 
 void Save::LoadFromFile() {
-    string Data;
+    xml_document doc;
 
-    ifstream Uploading("Books.xml", ios::app);
-    if (Uploading.is_open()){
-        while (getline(Uploading, Data)){
-            cout << Data << endl;
+    if (!doc.load_file("sample.xml")) cout <<"кну";
+
+    xml_node tools = doc.child("EmployeesData").child("Employees");
+
+    for (xml_node_iterator it = tools.begin(); it != tools.end(); ++it){
+        cout << "Employees:";
+        for (xml_attribute_iterator ait = it->attributes_begin();
+            ait != it->attributes_end(); ++ait){
+            cout << " " << ait->name() << "=" << ait->value();
         }
+        cout << endl;
     }
-    Uploading.close();
-
+    cout << endl;
 }
