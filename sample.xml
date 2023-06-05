@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
 
-<EmployeesData FormatVersion="1">
+<Universe FormatVersion="1">
 
-	<Employees>
+	<Planets>
 
-		<Employee Name="John" Type="Part-Time">
+		<Planet Name="Jupiter" Type="FirstPlayer">
 
-		</Employee>
+		</Planet>
 
-		<Employee Name="Sean" Type="Full-Time">
+		<Planet Name="Saturn" Type="SecondPlayer">
 
-		</Employee>
+		</Planet>
 
-		<Employee Name="Sarah" Type="Part-Time">
+		<Planet Name="earth" Type="Neutral">
 
-		</Employee>
+		</Planet>
 
-	</Employees>
+	</Planets>
 
-</EmployeesData>
+</Universe>
