@@ -2,10 +2,10 @@
 #include "IComandEngine.h"
 class ComandEngine :public IComandEngine{
 
-	void FinishTurn();
-	void ShowUniverseStatus();
-	void SendFleet();
-	void BuildShip();
-	void ComandEng();
+	virtual void FinishTurn();
+	virtual void ShowUniverseStatus();
+	virtual void SendFleet();
+	virtual void BuildShip();
+	virtual void ComandEng();
 
 };
