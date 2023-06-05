@@ -2,7 +2,6 @@
 class DataModelGenerator
 {
 public:
-	int CreatePlayerPlanet();
-	int CreateNeutralPlanet();
+	int CreateUnivers();
 };
 
