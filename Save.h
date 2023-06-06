@@ -7,6 +7,6 @@ using namespace pugi;
 
 class Save : public ISave {
 public:
-	void SaveToFile();
-	void LoadFromFile();
+	void SaveToFile(IDataModel DataModel);
+	void LoadFromFile(IDataModel DataModel);
 };
