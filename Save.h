@@ -2,9 +2,6 @@
 #include "ISave.h"
 #include "IDataModel.h"
 #include <iostream>
-#include "pugixml.hpp"
-using namespace std;
-using namespace pugi;
 
 class Save : public ISave {
 public:
