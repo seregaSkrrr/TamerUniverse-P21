@@ -1,5 +1,6 @@
 #pragma once
 #include "ISave.h"
+#include "IDataModel.h"
 #include <iostream>
 #include "pugixml.hpp"
 using namespace std;
