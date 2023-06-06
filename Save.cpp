@@ -1,10 +1,10 @@
 #include "Save.h"
 
-void Save::SaveToFile() {
+void Save::SaveToFile(IDataModel DataModel) {
     //позже
 }
 
-void Save::LoadFromFile() {
+void Save::LoadFromFile(IDataModel DataModel) {
     xml_document doc;
 
     if (!doc.load_file("sample.xml")) cout <<"ЛОХ";
