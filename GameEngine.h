@@ -1,12 +1,12 @@
 #pragma once
 #include "IgameEngine.h"
-class GameEngine : public IGameEngine
-{
+class GameEngine : public IGameEngine{
+private:
+	void SaveMenu();
+	void StatusEmpire();
+	void EnteringCommands();
+	void OrganizationBattle();
 public:
-	void savemenu();
-	void statusEmpire();
-	void enteringcommands();
-	void organizationbattle();
-
+	void StartGame();
 };
 
