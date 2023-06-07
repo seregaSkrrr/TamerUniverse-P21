@@ -1,7 +1,7 @@
 #pragma once
 class IGameEngine
 {
-private:
+public:
 	virtual void SaveMenu();
 	virtual void StatusEmpire();
 	virtual void EnteringCommands();
