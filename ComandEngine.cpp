@@ -1,21 +1,11 @@
 #include "ComandEngine.h"
 
-void ComandEngine::FinishTurn(){
+void ComandEngine::FinishTurn(){}
 
-}
+void ComandEngine::ShowUniverseStatus(){}
 
-void ComandEngine::ShowUniverseStatus()
-{
-}
+void ComandEngine::SendFleet(){}
 
-void ComandEngine::SendFleet()
-{
-}
+void ComandEngine::BuildShip(){}
 
-void ComandEngine::BuildShip()
-{
-}
-
-void ComandEngine::ComandEng()
-{
-}
+void ComandEngine::ComandEng(){}
