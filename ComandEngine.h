@@ -6,6 +6,4 @@ public:
 	virtual void ShowUniverseStatus();
 	virtual void SendFleet();
 	virtual void BuildShip();
-	virtual void ComandEng();
-
 };
