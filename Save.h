@@ -1,6 +1,19 @@
-#pragma once
 #include "ISave.h"
+#include <iostream>
+#include <fstream>
+using namespace std;
+
 class Save : public ISave {
-	void Uploadfile();			//функция будет запрашивать переменные соответствующие составу игры: корабли, планеты и т.д. и будет брать файл (приложенный в папке с этим проектом)
-	void LoadFile();			//функция будет запрашивать переменные соответствующие составу игры: корабли, планеты и т.д. и будет их записывать в текстовый файл (приложенный в папке с этим проектом)
+private:
+	void WriteTag(char* Tag);
+	void TagUniverse();
+	void WriteTurn();
+	void WriteShip();
+	void WriteFleet();
+	void WritePlanet();
+	void WritePlanets();
+	void WriteUniverse();
+public:
+	void SaveToFile();
+	void LoadFromFile();
 };
