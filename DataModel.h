@@ -4,7 +4,7 @@
 #include "Ship.h"
 class DataModel : public IDataModel
 {
-	Planet planets;
+	Planet** planets;
 	Ship ship; 
 public:
 	void SendShip(int planetIndex);
