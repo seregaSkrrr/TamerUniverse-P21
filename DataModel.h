@@ -5,7 +5,7 @@
 class DataModel : public IDataModel
 {
 	Planet** planets;
-	Ship ship; 
+	Ship** ships; 
 public:
 	void SendShip(int planetIndex);
 	void BuildShip(int shield, int attack);
