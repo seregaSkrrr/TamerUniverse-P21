@@ -12,7 +12,7 @@ void ComandEngine::SendFleet()
 {
 }
 
-void ComandEngine::BuildShip()
+void ComandEngine::BuildShip(int attack,int shield)
 {
 }
 
