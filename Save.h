@@ -7,6 +7,8 @@
 using namespace std;
 
 class SaveLoadEngine : public ISaveLoadEngine {
+//private:
+//	
 public:
 	void SaveToFile();
 	void LoadFromFile();
