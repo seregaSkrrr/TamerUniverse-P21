@@ -1,21 +1,2 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
 
-<Universe FormatVersion="1">
-
-	<Planets>
-
-		<Planet Name="Jupiter" Type="FirstPlayer">
-
-		</Planet>
-
-		<Planet Name="Saturn" Type="SecondPlayer">
-
-		</Planet>
-
-		<Planet Name="earth" Type="Neutral">
-
-		</Planet>
-
-	</Planets>
-
-</Universe>

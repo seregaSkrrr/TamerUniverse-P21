@@ -1,23 +1,23 @@
-#include "Save.h"
+#include "SaveLoadEngine.h"
+#pragma warning(disable : 4996)
 
-void Save::SaveToFile(IDataModel DataModel) {
-    //позже
+void SaveLoadEngine::SaveToFile() {
+	ofstream in;
+	in.open("Universe.xml", ios::app);
+	const char* Data;
+	Data = "Let's go";
+	in << Data << endl;
 }
 
-void Save::LoadFromFile(IDataModel DataModel) {
-    xml_document doc;
-
-    if (!doc.load_file("sample.xml")) cout <<"ЛОХ";
-
-    xml_node tools = doc.child("Universe").child("Planets");
-
-    for (xml_node_iterator it = tools.begin(); it != tools.end(); ++it){
-        cout << "Planets:";
-        for (xml_attribute_iterator ait = it->attributes_begin();
-            ait != it->attributes_end(); ++ait){
-            cout << " " << ait->name() << "=" << ait->value();
-        }
-        cout << endl;
-    }
-    cout << endl;
+void SaveLoadEngine::LoadFromFile() {
+	ofstream in;
+	in.open("Universe.xml", ios::app);
+	const char* Data = "Universe.xml";
+	char buffer[100];
+	FILE* FileManager = fopen(Data, "r+b");
+	while ((fgets(buffer, 100, FileManager)) != NULL)
+	{
+		cout << buffer;
+	}
+	fclose(FileManager);
 }
