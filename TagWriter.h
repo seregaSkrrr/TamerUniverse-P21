@@ -15,6 +15,6 @@ public:
 	void WriteFleet();
 	void WriteShip();
 	void WriteOwner();
-	void WriteUD();
+	void WriteID();
 
 };
