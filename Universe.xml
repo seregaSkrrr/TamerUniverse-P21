@@ -1,2 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<?xml version="1.0" encoding="utf-8"?>
 
+<Universe>
+	<Turn>SecondPlayer</Turn>
+
+	<Planets>
+		<Planet>
+
+			<Fleet>
+				<Ship>2</Ship>
+			</Fleet>
+			<Owner>FiratPlayer</Owner>
+			<ID>Jupiter</ID>
+
+		</Planet>
+	</Planets>
+
+</Universe>
