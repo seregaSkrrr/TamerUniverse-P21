@@ -15,16 +15,8 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="TamerUniverse.cpp">
+    <ClCompile Include="TamerUniverse-P21.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
   </ItemGroup>
 </Project>
