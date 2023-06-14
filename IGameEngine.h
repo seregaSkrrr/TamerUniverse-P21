@@ -2,5 +2,5 @@
 class IGameEngine
 {
 public:
-	virtual void StartGame();
+	virtual void StartGame = 0;
 };
