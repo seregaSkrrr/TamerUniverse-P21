@@ -7,7 +7,7 @@ class GameEngine : public IGameEngine
 	private:
 		void SaveMenu();
 		void StatusEmpire();
-		void EnterSaveCommand();
+		void EnterCommand();
 		void StartBattle();
 	public:
 		void StartGame();
