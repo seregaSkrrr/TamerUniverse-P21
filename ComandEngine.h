@@ -5,6 +5,6 @@ class ComandEngine :public IComandEngine{
 		void FinishTurn();
 	void ShowUniverseStatus();
 public:
-void SendFleet(int point); 
+void SendFleet(int planetID); 
 void BuildShip(int shield,int attack);
 };
