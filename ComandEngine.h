@@ -1,9 +1,10 @@
 #pragma once
 #include "IComandEngine.h"
 class ComandEngine :public IComandEngine{
+	private:
+		void FinishTurn();
+	void ShowUniverseStatus();
 public:
-	virtual void FinishTurn();
-	virtual void ShowUniverseStatus();
-	virtual void SendFleet();
-	virtual void BuildShip();
+void SendFleet(int point); 
+void BuildShip(int shield,int attack);
 };
