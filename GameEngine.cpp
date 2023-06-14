@@ -2,6 +2,6 @@
 #pragma once
 void GameEngine::SaveMenu() {}
 void GameEngine::StatusEmpire() {}
-void GameEngine::EnterSaveCommand() {}
+void GameEngine::EnterCommand() {}
 void GameEngine::StartBattle() {}
 void GameEngine::StartGame() {}
