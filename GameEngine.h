@@ -8,7 +8,7 @@ class GameEngine : public IGameEngine
 		void SaveMenu();
 		void StatusEmpire();
 		void EnteringCommands();
-		void OrganizationBattle();
+		void StartBattle();
 	public:
 		void StartGame();
 	};
