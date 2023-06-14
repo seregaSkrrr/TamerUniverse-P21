@@ -3,6 +3,6 @@
 void GameEngine::SaveMenu() {}
 void GameEngine::StatusEmpire() {}
 void GameEngine::EnteringCommands() {}
-void GameEngine::OrganizationBattle() {}
+void GameEngine::StartBattle() {}
 void GameEngine::GameStartGame() {}
 void GameEngine::StartGame() {}
