@@ -2,9 +2,10 @@
 #include "IComandEngine.h"
 class ComandEngine :public IComandEngine{
   private:
-void FinishTurn();
-void ShowUniverseStatus();
+void BuildShip(int attack,int shield);
+void SendFleet(int targetPlanetId);
   public:
-void SendFleet(); 
-void BuildShip();
+void WelcomeMessage();
+void ShowHelp();
+
 };
