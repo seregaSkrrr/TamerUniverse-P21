@@ -3,16 +3,16 @@
 #include "FileManager.h"
 #include "TagWriter.h"
 
-void SaveLoadEngine::SaveToFile(){
-	FileManager File;
-	TagWriter Tager;
-	const char* Data = Tager.WriteTag("Universe");
-	File.OpenFile();
-	File.WriteFile(Data);
-	File.CloseFile();
+void SaveLoadEngine::SaveToFile() {
+	//FileManager File;
+	//TagWriter Tager;
+	//const char* Data = Tager.WriteTag("Universe");
+	//File.OpenFile();
+	//File.WriteFile(Data);
+	//File.CloseFile();
 }
 
-void SaveLoadEngine::LoadFromFile(){
+void SaveLoadEngine::LoadFromFile() {
 	FileManager File;
 	File.OpenFile();
 	File.ReadFile();

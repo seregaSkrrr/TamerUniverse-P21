@@ -6,7 +6,7 @@
 #include <stdio.h>
 using namespace std;
 
-class FileManager{
+class FileManager {
 public:
 	void OpenFile();
 	void ReadFile();
