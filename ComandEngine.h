@@ -4,6 +4,8 @@ class ComandEngine :public IComandEngine{
   private:
 void BuildShip(int attack,int shield);
 void SendFleet(int targetPlanetId);
+void ShowUniverseStatus();
+void FinishTurn();
   public:
 void WelcomeMessage();
 void ShowHelp();
