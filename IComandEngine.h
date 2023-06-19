@@ -6,6 +6,7 @@ private:
   virtual void ShowUniverseStatus() = 0;
   virtual void FinishTurn() = 0;
 public:
+  virtual void StartEngine() = 0;
   virtual void WelcomeMessage() = 0;
   virtual void ShowHelp() = 0;
 };
