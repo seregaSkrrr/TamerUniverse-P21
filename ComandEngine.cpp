@@ -1,5 +1,9 @@
 #include "ComandEngine.h"
 
+void ComandEngine::StartEngine(){
+
+}
+
 void ComandEngine::WelcomeMessage(){
 }
 
