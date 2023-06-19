@@ -1,15 +1,15 @@
 #include "ComandEngine.h"
 
-void ComandEngine::WelcomeMessage(){}
+void ComandEngine::WelcomeMessage();
 
-void ComandEngine::ShowHelp(){}
+void ComandEngine::ShowHelp();
 
-void ComandEngine::SendFleet(int targetPlanetId){}
+void ComandEngine::SendFleet(int targetPlanetId);
 
-void ComandEngine::BuildShip(int attack,int shield){}
+void ComandEngine::BuildShip(int attack,int shield);
 
-void ComandEngine::ShowUniverseStatus(){}
+void ComandEngine::ShowUniverseStatus();
 
-void ComandEngine::FinishTurn(){}
+void ComandEngine::FinishTurn();
 
 
