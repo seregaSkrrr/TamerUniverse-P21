@@ -8,6 +8,7 @@ using namespace std;
 class TagBuilder {
 public:
 	void WriteTag(const char* Tag);
+	const char* WriteDefaultString();
 	void WriteUniverse();
 	void WriteTurn();
 	void WritePlanets();

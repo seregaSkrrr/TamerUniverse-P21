@@ -4,12 +4,12 @@
 #include "TagBuilder.h"
 
 void SaveLoadEngine::SaveToFile() {
-	//FileManager File;
-	//TagWriter Tager;
-	//const char* Data = Tager.WriteTag("Universe");
-	//File.OpenFile();
-	//File.WriteFile(Data);
-	//File.CloseFile();
+	FileManager File;
+	TagBuilder Tager;
+	const char* Data = Tager.WriteDefaultString();
+	File.OpenFile();
+	File.WriteFile(Data);
+	File.CloseFile();
 }
 
 void SaveLoadEngine::LoadFromFile() {
