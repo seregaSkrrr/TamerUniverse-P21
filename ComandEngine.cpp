@@ -2,7 +2,8 @@
 
 void ComandEngine::StartEngine(){
 }
-void ComandEngine::WelcomeMessage(){
+void ComandEngine::ShowWelcomeMessage(){
+
 }
 void ComandEngine::ShowHelp(){
 }
