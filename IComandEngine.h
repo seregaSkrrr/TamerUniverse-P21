@@ -8,8 +8,6 @@ private:
     virtual void StartEngine() = 0;
     virtual void WelcomeMessage() = 0;
     virtual void ShowHelp() = 0;
-    virtual void WelcomeMessage() = 0;
-    virtual void ShowHelp() = 0;
 public:
     virtual void StartEngine() = 0;
 
