@@ -6,7 +6,7 @@ private:
 	void SendFleet(int targetPlanetId);
 	void ShowUniverseStatus();
 	void FinishTurn();
-	void WelcomeMessage();
+	void ShowWelcomeMessage();
 	void ShowHelp();
 public:
 	void StartEngine();
