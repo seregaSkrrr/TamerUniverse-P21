@@ -1,6 +1,6 @@
 #pragma once
 class IComandEngine {
-public:
+private:
     virtual void SendFleet(int targetPlanetId) = 0;
     virtual void BuildShip(int attack,int shield) = 0;
     virtual void ShowUniverseStatus() = 0;
@@ -8,8 +8,9 @@ public:
     virtual void StartEngine() = 0;
     virtual void WelcomeMessage() = 0;
     virtual void ShowHelp() = 0;
-    virtual void StartEngine() = 0;
     virtual void WelcomeMessage() = 0;
     virtual void ShowHelp() = 0;
+public:
+    virtual void StartEngine() = 0;
 
 };
