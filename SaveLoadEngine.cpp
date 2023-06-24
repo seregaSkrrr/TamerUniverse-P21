@@ -6,7 +6,7 @@
 void SaveLoadEngine::SaveToFile() {
 	FileManager File;
 	TagBuilder Tager;
-	const char* Data = Tager.WriteDefaultString();
+	const char* Data = Tager.BuildFile();
 	File.OpenFile();
 	File.WriteFile(Data);
 	File.CloseFile();
