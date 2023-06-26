@@ -2,10 +2,12 @@
 #include "IDataModel.h"
 #include "Planet.h"
 #include "Ship.h"
+#include "Fleet.h"
 class DataModel : public IDataModel
 {
-	Planet** planets;
-	Ship** ships; 
+	Fleet Player1Fleet;
+	Fleet Player2Fleet;
+	Planet* planets;
 public:
 	void SendShip(int planetIndex);
 	void BuildShip(int shield, int attack);
