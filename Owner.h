@@ -1,3 +1,3 @@
 #pragma once
 
-enum Owner { Player1, Neutral, Player2 };
+enum class Owner{ Player1, Neutral, Player2};

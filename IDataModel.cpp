@@ -1,6 +1,6 @@
 #include "IDataModel.h"
 
-void IDataModel::SendShip(int planetIndex)
+void IDataModel::SendFleet(int planetIndex)
 {
 
 }
@@ -15,7 +15,7 @@ void IDataModel::StartTurn()
 
 }
 
-void IDataModel::EndTruen()
+void IDataModel::EndTurn()
 {
-
 }
+
