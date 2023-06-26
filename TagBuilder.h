@@ -1,21 +1,21 @@
 #include <fstream>
+#include <sstream>
 #include <iostream>
 #include <string>
-#include <string.h>
 #include <stdio.h>
 using namespace std;
 #pragma once
 
 class TagBuilder {
 public:
-	char* BuildFile();
+	char* BuildDefaultString();
 	char* BuildUniverse();
-	char* BuildTurn();
+	char* BuildTurn(string Turn);
 	char* BuildPlanets();
 	char* BuildPlanet();
 	char* BuildFleet();
-	char* BuildShip();
-	char* BuildOwner();
-	char* BuildID();
+	char* BuildShip(int count);
+	char* BuildOwner(string owner);
+	char* BuildID(string id);
 
 };

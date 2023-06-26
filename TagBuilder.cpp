@@ -1,64 +1,105 @@
 #include "TagBuilder.h"
-#include <string>
-#include <string.h>
 
-char* TagBuilder::BuildFile() {
-	char* Ending = new char(10);
-	Ending[0] = 0;
-	const char* Default = "<?xml version=\"1.0\"encoding=\"utf-8\"?>\r\n";
+char* TagBuilder::BuildDefaultString() {
+	const char* Default = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n";
 	char* Addition = BuildUniverse();
-	strcat_s(Ending, sizeof(char) * 10, Default);
-	strcat_s(Ending, sizeof(char) * 10, Addition);
-	return (char*)Ending;
+	stringstream Streamer;
+	Streamer << Default << Addition;
+	char* Ending = (char*)Streamer.str().c_str();
+	return(char*)Ending;
 }
 
 char* TagBuilder::BuildUniverse()
 {
-	char* Ending = new char(100);
-	Ending[0] = 0;
+	srand(time(NULL));
+	string Turns[3] = { "First", "Second", "Third" };
 	const char* Universe = "<Universe>\r\n";
 	const char* EndOfUniverse = "</Universe>\r\n";
-	char* FirstAddition = BuildTurn();
+	char* FirstAddition = BuildTurn(Turns[rand()%2]);
 	char* SecondAddition = BuildPlanets();
-	strcat_s(Ending, sizeof(char) * 10, Universe);
-	strcat_s(Ending, sizeof(char) * 10, SecondAddition);
-	strcat_s(Ending, sizeof(char) * 10, FirstAddition);
-	strcat_s(Ending, 1000, EndOfUniverse);
+	stringstream Streamer;
+	Streamer << Universe << FirstAddition << SecondAddition << EndOfUniverse;
+	char* Ending = (char*)Streamer.str().c_str();
 	return (char*)Ending;
 }
 
-char* TagBuilder::BuildTurn()
+char* TagBuilder::BuildTurn(string Turn)
 {
-	return (char*)" ";
+	const char* WTurn = "<Turn>\r\n";
+	const char* EndOfTurn = "</Turn>\r\n";
+	stringstream Streamer;
+	Streamer << WTurn << EndOfTurn;
+	char* Ending = (char*)Streamer.str().c_str();
+	return (char*)Ending;
 }
 
 char* TagBuilder::BuildPlanets()
 {
-	return (char*)" ";
+	const char* Planets = "<Planets>\r\n";
+	const char* EndOfPlanets = "</Planets>\r\n";
+	char* FirstAddition = BuildPlanet();
+	stringstream Streamer;
+	Streamer << Planets << FirstAddition <<EndOfPlanets;
+	char* Ending = (char*)Streamer.str().c_str();
+	return (char*)Ending;
 }
 
 char* TagBuilder::BuildPlanet()
 {
-	return (char*)" ";
+	string Owners[3] = { "First", "Second", "Netral" };
+	string ID[5] = { "Jupiter", "Earth", "Mars", "Merkuriy", "Venera"};
+	const char* Planet = "<Planet>\r\n";
+	const char* EndOfPlanet = "</Planet>\r\n";
+	char* FirstAddition = BuildFleet();
+	char* SecondAddition = BuildOwner(Owners[rand() % 2]);
+	char* ThirdAddition = BuildID(ID[rand()%4]);
+	stringstream Streamer;
+	Streamer << Planet << FirstAddition << SecondAddition << ThirdAddition << EndOfPlanet;
+	char* Ending = (char*)Streamer.str().c_str();
+	return (char*)Ending;
 }
 
 char* TagBuilder::BuildFleet()
 {
-	return (char*)" ";
+	int Ships[5];
+	for (int i = 0; i < 5; i++) {
+		Ships[i] = rand() % 10;
+	}
+	const char* Fleet = "<Fleet>\r\n";
+	const char* EndOfFleet = "</Fleet>\r\n";
+	char* FirstAddition = BuildShip(Ships[rand()%4]);
+	stringstream Streamer;
+	Streamer << Fleet << FirstAddition << EndOfFleet;
+	char* Ending = (char*)Streamer.str().c_str();
+	return (char*)Ending;
 }
 
-char* TagBuilder::BuildShip()
+char* TagBuilder::BuildShip(int count)
 {
-	return (char*)" ";
+	const char* Ship = "<Ship>\r\n";
+	const char* EndOfShip = "</Ship>\r\n";
+	stringstream Streamer;
+	Streamer << Ship << count<< EndOfShip;
+	char* Ending = (char*)Streamer.str().c_str();
+	return (char*)Ending;
 }
 
-char* TagBuilder::BuildOwner()
+char* TagBuilder::BuildOwner(string owner)
 {
-	return (char*)" ";
+	const char* Owner = "<Owner>\r\n";
+	const char* EndOfOwner = "</Owner>\r\n";
+	stringstream Streamer;
+	Streamer << Owner << owner<< EndOfOwner;
+	char* Ending = (char*)Streamer.str().c_str();
+	return (char*)Ending;
 }
 
-char* TagBuilder::BuildID()
+char* TagBuilder::BuildID(string id)
 {
-	return (char*)" ";
+	const char* ID = "<ID>\r\n";
+	const char* EndOfID = "</ID>\r\n";
+	stringstream Streamer;
+	Streamer << ID << id << EndOfID;
+	char* Ending = (char*)Streamer.str().c_str();
+	return (char*)Ending;
 }
-                                             
