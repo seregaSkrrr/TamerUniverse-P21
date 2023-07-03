@@ -5,7 +5,7 @@
 using namespace std;
 class Fleet:public OwnedObject{
 private:
-	list<Ship> ships;
+	list<Ship> _ships;
 public:
-	int AddShip(int ID);
+	int AddShip(Ship ship);
 };

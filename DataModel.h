@@ -5,9 +5,9 @@
 #include "Fleet.h"
 class DataModel : public IDataModel
 {
-	Fleet Player1Fleet;
-	Fleet Player2Fleet;
-	Planet* planets;
+	Fleet _player1Fleet;
+	Fleet _player2Fleet;
+	Planet* _planets;
 public:
 	void SendShip(int planetIndex);
 	void BuildShip(int shield, int attack);
