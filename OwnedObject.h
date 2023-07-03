@@ -1,7 +1,6 @@
 #pragma once
 #include "Owner.h"
-class OwnedObject
-{
+class OwnedObject{
 	Owner _owner;
 public:
 	Owner GetOwner();
