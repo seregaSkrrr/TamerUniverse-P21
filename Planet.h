@@ -1,7 +1,9 @@
 #pragma once
+#include <iostream>
+#include <list>
 #include "OwnedObject.h"
 #include "Fleet.h"
-
+using namespace std;
 class Planet : public OwnedObject
 {
 private:

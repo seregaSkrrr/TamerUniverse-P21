@@ -8,7 +8,4 @@ void Planet::TurnsToBuild(int Ship)
 void Planet::EndTrun()
 {
 	this->_turnsToBiuld - 1;
-	if (this->_turnsToBiuld == 0) {
-		
-	}
 }

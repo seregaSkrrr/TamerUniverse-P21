@@ -15,7 +15,7 @@ void IDataModel::StartTurn()
 
 }
 
-void IDataModel::EndTurn()
+void IDataModel::EndTurn(int planetss)
 {
 }
 

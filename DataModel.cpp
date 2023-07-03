@@ -16,7 +16,9 @@ void DataModel::StartTurn()
 
 }
 
-void DataModel::EndTrun()
+void DataModel::EndTrun(int planetss)
 {
-
+	int n = rand() % 10 + 5;
+	for(int planet = 0; planet < n;planet++)
+	planets[planet].EndTrun();
 }

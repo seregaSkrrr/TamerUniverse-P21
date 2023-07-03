@@ -12,5 +12,5 @@ public:
 	void SendShip(int planetIndex);
 	void BuildShip(int shield, int attack);
 	void StartTurn();
-	void EndTrun();
+	void EndTrun(int planetss);
 };

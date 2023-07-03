@@ -3,10 +3,13 @@
 class Ship : public OwnedObject
 {
 private:
-	void _attack();
-	void _defense();
+	int _attack = 0;
+	int _defense = 0;
 
 public:
-
+	int GetAttack(int Attack);
+	void SetAttack(int Attack);
+	int GetDefense(int Defense);
+	void SetDefense(int Defense);
 };
 
