@@ -1,11 +1,22 @@
 #include "Ship.h"
 
-void Ship::_attack()
+
+int Ship::GetAttack(int Attack)
 {
-	int AttackPower = 0;
+	return Attack;
 }
 
-void Ship::_defense()
+void Ship::SetAttack(int Attack)
 {
-	int DefensePower = 0;
+	this->_attack = Attack;
+}
+
+int Ship::GetDefense(int Defense)
+{
+	return Defense;
+}
+
+void Ship::SetDefense(int Defense)
+{
+	this->_defense = Defense;
 }
