@@ -4,17 +4,17 @@
 #include "TagBuilder.h"
 
 void SaveLoadEngine::SaveToFile() {
-	FileManager File;
-	TagBuilder Tager;
-	const char* Data = Tager.BuildDefaultString();
-	File.OpenFile();
-	File.WriteFile(Data);
-	File.CloseFile();
+	FileManager filemanager;
+	TagBuilder tagbuilder;
+	const char* Data = tagbuilder.BuildDefaultString();
+	filemanager.OpenFile();
+	filemanager.WriteFile(Data);
+	filemanager.CloseFile();
 }
 
 void SaveLoadEngine::LoadFromFile() {
-	FileManager File;
-	File.OpenFile();
-	File.ReadFile();
-	File.CloseFile();
+	FileManager filemanager;
+	filemanager.OpenFile();
+	filemanager.ReadFile();
+	filemanager.CloseFile();
 }
