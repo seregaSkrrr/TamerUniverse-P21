@@ -7,6 +7,8 @@
 using namespace std;
 
 class FileManager {
+private:
+	ofstream File;
 public:
 	void OpenFile();
 	void ReadFile();
